@@ -28,8 +28,10 @@
 <strong>Not</strong> suitable for <a href="https://www.xda-developers.com/chainfire-releases-root-for-android-6-0-without-modifying-system/">SYSTEMLESS rooted devices</a>.
 <br/>Will trip Samsung KNOX <sub>(<code>/system/xbin</code> is modified)</sub>.
 <br/><strong>You will loose your warranty!</strong>
+<br/><strong>This whole thing (the code/downloads provided here, etc..) is for academic reasons, and you should NOT use any of it, unless you take are willing to take a full responsibility. Don't cry like a baby if it will break your phone 📳︎, steal your donuts 🍩︎ or rape your cat! 😻︎👉︎👌︎</strong>
 </blockquote>
 
+<br/>
 <br/>
 What You Will See:
 
