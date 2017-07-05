@@ -15,10 +15,11 @@ run_program("/sbin/mount", "/dev/block/platform/15570000.ufs/by-name/USERDATA", 
 ui_print("done.");
 
 ui_print(" ");
-ui_print("busybox cleanup...");
-package_extract_dir("busybox", "/tmp/busybox");
-run_program("/sbin/busybox", "unzip", "/tmp/busybox/busybox-cleaner.zip", "META-INF/com/google/android/*", "-d", "/tmp/busybox");
-run_program("/sbin/busybox", "sh", "/tmp/busybox/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/busybox/busybox-cleaner.zip");
+ui_print("extract tools cleanup...");
+package_extract_dir("tools", "/tmp/tools");
+set_perm(0, 2000, 0755, "/tmp/tools/bbx-1262-armv4tl");
+run_program("/tmp/tools/bbx-1262-armv4tl", "unzip", "/tmp/tools/cleaner.zip", "META-INF/com/google/android/*", "-d", "/tmp/tools");
+run_program("/tmp/tools/bbx-1262-armv4tl", "sh", "/tmp/tools/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/tools/cleaner.zip");
 ui_print("done.");
 
 ui_print(" ");
@@ -28,7 +29,7 @@ ui_print("done.");
 
 ui_print(" ");
 ui_print("busybox install to xbin...");
-package_extract_dir("system", "/system");
+package_extract_dir("binary", "/system/xbin");
 set_perm(0, 2000, 0755, "/system/xbin/busybox");
 ui_print("done.");
 
