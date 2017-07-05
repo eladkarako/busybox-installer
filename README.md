@@ -1,11 +1,9 @@
 <h1>busybox-installer &nbsp; &nbsp; <sub><a target="_blank" href="https://paypal.me/e1adkarak0" rel="nofollow"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" width="60" height="16" border="0" alt="PayPal Donation"></a></sub></h1>
 
-<h3><em>To Be Installed From Recovery. <sub>(Not ODIN!)</sub></em></h3>
-
-<h2><em>(Current Official Version: <strong><code>v1.26.2</code></strong>)</em></h2>.
+<h3><em>Current Official Version: <strong><code>v1.26.2</code></strong></em></h3>.
 
 <ul>
-<li><h4><a href="_DOWNLOAD_/busybox_1.26.2_armv4tl.zip">busybox_1.26.2_armv4tl.zip</a> <strong><em>&gt;&gt;&gt;- YOU WANT THIS ONE</em></strong></h4></li>
+<li><h3><a href="_DOWNLOAD_/busybox_1.26.2_armv4tl.zip">busybox_1.26.2_armv4tl.zip</a> <strong><em>&lt;&lt;&lt;- YOU WANT THIS ONE</em></strong></h3></li>
 <li><h5><a href="_DOWNLOAD_/busybox_1.26.2_armv5l.zip" >busybox_1.26.2_armv5l.zip</a></h5></li>
 <li><h5><a href="_DOWNLOAD_/busybox_1.26.2_armv6l.zip" >busybox_1.26.2_armv6l.zip</a></h5></li>
 <li><h5><a href="_DOWNLOAD_/busybox_1.26.2_i686.zip"   >busybox_1.26.2_i686.zip</a></h5></li>
@@ -21,6 +19,7 @@
 </ol>
 
 <blockquote>
+<h3><em>To Be Installed From Recovery. <sub>(Not ODIN!)</sub></em></h3>
 <h3><strong>root is required!</strong></h3>
 <hr/>
 <h2>WARNING(S)</h2>
