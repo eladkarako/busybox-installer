@@ -7,6 +7,7 @@
 <li>Cleans up old versions.</li>
 <li>Install latest, official version <em>(currently <strong>v1.26.2</strong>)</em>.</li>
 <li>Works with both official/custom recovery <em>(the ZIP-file(s) are signed)</em>.</li>
+</ol>
 
 <blockquote>
 <h3><strong>root is required!</strong></h3>
