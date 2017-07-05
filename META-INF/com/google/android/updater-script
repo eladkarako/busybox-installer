@@ -1,0 +1,50 @@
+ui_print("********************");
+ui_print("* busybox install, *");
+ui_print("* & applet update. *");
+ui_print("*                  *");
+ui_print("* v1.26.2/armv4tl  *");
+ui_print("* Jan2017.         *");
+ui_print("*                  *");
+ui_print("*    /by eladkarako*");
+ui_print("********************");
+
+ui_print(" ");
+ui_print("system and data mount...");
+run_program("/sbin/mount", "/dev/block/platform/15570000.ufs/by-name/SYSTEM", "/system");
+run_program("/sbin/mount", "/dev/block/platform/15570000.ufs/by-name/USERDATA", "/data");
+ui_print("done.");
+
+ui_print(" ");
+ui_print("busybox cleanup...");
+package_extract_dir("busybox", "/tmp/busybox");
+run_program("/sbin/busybox", "unzip", "/tmp/busybox/busybox-cleaner.zip", "META-INF/com/google/android/*", "-d", "/tmp/busybox");
+run_program("/sbin/busybox", "sh", "/tmp/busybox/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/busybox/busybox-cleaner.zip");
+ui_print("done.");
+
+ui_print(" ");
+ui_print("system remount...");
+run_program("/sbin/mount", "/dev/block/platform/15570000.ufs/by-name/SYSTEM", "/system");
+ui_print("done.");
+
+ui_print(" ");
+ui_print("busybox install to xbin...");
+package_extract_dir("system", "/system");
+set_perm(0, 2000, 0755, "/system/xbin/busybox");
+ui_print("done.");
+
+ui_print(" ");
+ui_print("busybox applets update...");
+run_program("/system/xbin/busybox", "--install", "-s", "/system/xbin");
+ui_print("done.");
+
+ui_print(" ");
+ui_print("system and data unmount...");
+unmount("/system");
+unmount("/data");
+ui_print("done.");
+
+ui_print(" ");
+ui_print("*************************");
+ui_print("* installation complete.*");
+ui_print("*************************");
+ui_print(" ");
